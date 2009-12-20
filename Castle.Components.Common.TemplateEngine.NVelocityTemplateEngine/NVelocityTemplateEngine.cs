@@ -40,7 +40,7 @@ namespace Castle.Components.Common.TemplateEngine.NVelocityTemplateEngine
 		private VelocityEngine vengine;
 		private ILogger log = NullLogger.Instance;
 
-		private List<string> assemblies = new List<string>();
+		private readonly List<string> assemblies = new List<string>();
 		private String templateDir = ".";
 		private bool enableCache = true;
 		private string assemblyName;
@@ -60,7 +60,7 @@ namespace Castle.Components.Common.TemplateEngine.NVelocityTemplateEngine
 		/// <param name="templateDir"></param>
 		public NVelocityTemplateEngine(String templateDir)
 		{
-			this.TemplateDir = templateDir;
+			TemplateDir = templateDir;
 		}
 
 		/// <summary>
@@ -256,7 +256,7 @@ namespace Castle.Components.Common.TemplateEngine.NVelocityTemplateEngine
 			return vengine.Evaluate(CreateContext(context), output, templateName, inputTemplate);
 		}
 
-		private IContext CreateContext(IDictionary context)
+		private static IContext CreateContext(IDictionary context)
 		{
 			return new VelocityContext( new Hashtable(context) );
 		}

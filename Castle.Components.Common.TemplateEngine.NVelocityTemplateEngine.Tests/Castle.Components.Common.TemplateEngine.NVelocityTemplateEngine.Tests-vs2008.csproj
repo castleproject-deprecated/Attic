@@ -128,9 +128,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AssemblyInfo.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="NVelocityTestCase.cs">
       <SubType>Code</SubType>
     </Compile>
