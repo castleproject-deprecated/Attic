@@ -1,5 +1,9 @@
 Change history
 --------------
+1.1.1
+===================
+- Updated Castle.Core to v1.2.0
+
 
 Release Candidate 3
 ===================
