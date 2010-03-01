@@ -28,12 +28,7 @@ namespace Castle.Components.Common.TemplateEngine.NVelocityTemplateEngine.Tests
 		[Test]
 		public void SimpleTemplateProcessing()
 		{
-			String path = Path.Combine(
-				AppDomain.CurrentDomain.BaseDirectory, 
-
-			Path.Combine(System.Configuration.ConfigurationManager.AppSettings["tests.src"], "templates"));
-
-			ITemplateEngine engine = new NVelocityTemplateEngine(path);
+			ITemplateEngine engine = new NVelocityTemplateEngine(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "templates"));
 			(engine as ISupportInitialize).BeginInit();
 
 			StringWriter writer = new StringWriter();
@@ -48,7 +43,7 @@ namespace Castle.Components.Common.TemplateEngine.NVelocityTemplateEngine.Tests
 		{
 			NVelocityTemplateEngine engine = new NVelocityTemplateEngine();
 
-			engine.AddResourceAssembly("Castle.Components.Common.TemplateEngine.NVelocityTemplateEngine.Tests");
+			engine.AddResourceAssembly("TemplateEngine.NVelocityTemplateEngine.Tests");
 			
 			(engine as ISupportInitialize).BeginInit();
 
@@ -69,8 +64,8 @@ namespace Castle.Components.Common.TemplateEngine.NVelocityTemplateEngine.Tests
 		{
 			NVelocityTemplateEngine engine = new NVelocityTemplateEngine();
 
-			engine.AddResourceAssembly("Castle.Components.Common.TemplateEngine.NVelocityTemplateEngine.Tests");
-			engine.AddResourceAssembly("Castle.Components.Common.TemplateEngine.NVelocityTemplateEngine.Tests.SR");
+			engine.AddResourceAssembly("TemplateEngine.NVelocityTemplateEngine.Tests");
+			engine.AddResourceAssembly("TemplateEngine.NVelocityTemplateEngine.Tests.SR");
 
 			(engine as ISupportInitialize).BeginInit();
 

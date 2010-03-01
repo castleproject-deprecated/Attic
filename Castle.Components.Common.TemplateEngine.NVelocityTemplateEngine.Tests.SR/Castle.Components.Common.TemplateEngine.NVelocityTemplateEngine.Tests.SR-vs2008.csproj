@@ -10,7 +10,7 @@
     </ApplicationIcon>
     <AssemblyKeyContainerName>
     </AssemblyKeyContainerName>
-    <AssemblyName>Castle.Components.Common.TemplateEngine.NVelocityTemplateEngine.Tests.SR</AssemblyName>
+    <AssemblyName>TemplateEngine.NVelocityTemplateEngine.Tests.SR</AssemblyName>
     <AssemblyOriginatorKeyFile>
     </AssemblyOriginatorKeyFile>
     <DefaultClientScript>JScript</DefaultClientScript>
