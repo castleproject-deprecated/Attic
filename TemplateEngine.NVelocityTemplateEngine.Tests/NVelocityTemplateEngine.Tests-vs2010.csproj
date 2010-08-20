@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
   <PropertyGroup>
+    <TargetFrameworkVersion>$(TargetFrameworkVersion)</TargetFrameworkVersion>
     <ProjectType>Local</ProjectType>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
@@ -111,9 +112,9 @@
     <Reference Include="System.Xml">
       <Name>System.XML</Name>
     </Reference>
-    <ProjectReference Include="..\TemplateEngine.NVelocityTemplateEngine.Tests.SR\NVelocityTemplateEngine.Tests.SR-vs2010.csproj">
+    <ProjectReference Include="..\TemplateEngine.NVelocityTemplateEngine.Tests.SR\NVelocityTemplateEngine.SR-vs2010.csproj">
       <Project>{B1DEC754-7B3F-4F3F-A99E-CB475C1AAFA2}</Project>
-      <Name>NVelocityTemplateEngine.Tests.SR-vs2010</Name>
+      <Name>NVelocityTemplateEngine.SR-vs2010</Name>
     </ProjectReference>
     <ProjectReference Include="..\TemplateEngine.NVelocityTemplateEngine\NVelocityTemplateEngine-vs2010.csproj">
       <Name>NVelocityTemplateEngine-vs2010</Name>

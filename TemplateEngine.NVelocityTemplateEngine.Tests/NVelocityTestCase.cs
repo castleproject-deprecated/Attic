@@ -65,7 +65,7 @@ namespace Castle.Components.Common.TemplateEngine.NVelocityTemplateEngine.Tests
 			NVelocityTemplateEngine engine = new NVelocityTemplateEngine();
 
 			engine.AddResourceAssembly("TemplateEngine.NVelocityTemplateEngine.Tests");
-			engine.AddResourceAssembly("TemplateEngine.NVelocityTemplateEngine.Tests.SR");
+			engine.AddResourceAssembly("Castle.Components.Common.TemplateEngine.NVelocityTemplateEngine.SR");
 
 			(engine as ISupportInitialize).BeginInit();
 
@@ -81,8 +81,8 @@ namespace Castle.Components.Common.TemplateEngine.NVelocityTemplateEngine.Tests
 
 			// clear the writer for the second run
 			writer = new StringWriter();
-			
-			string secondTemplateFile = "Castle.Components.Common.TemplateEngine.NVelocityTemplateEngine.Tests.SR/compiledres/simple.vm"; 
+
+			string secondTemplateFile = "Castle.Components.Common.TemplateEngine.NVelocityTemplateEngine.SR/compiledres/simple.vm"; 
 			Assert.IsTrue(engine.Process(
 				new Hashtable(),
 				secondTemplateFile,
