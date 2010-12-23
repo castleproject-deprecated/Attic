@@ -5,7 +5,7 @@
 // ------------------------------------------------------------------------------
 [assembly: System.Runtime.InteropServices.ComVisible(false)]
 [assembly: System.CLSCompliant(true)]
-[assembly: System.Reflection.AssemblyTitle("Castle.Components.Scheduler for .NETFramework v3.5")]
+[assembly: System.Reflection.AssemblyTitle("Castle.Components.Scheduler for .NETFramework v4.0")]
 [assembly: System.Reflection.AssemblyProduct("Castle.Components.Scheduler")]
 [assembly: System.Reflection.AssemblyVersion("1.0.0.0")]
 [assembly: System.Reflection.AssemblyFileVersion("1.0.0.0")]
